@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="preload" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="Css/styles.css" as="style">
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"> <!--Se coloca la imagen dentro de la etiqueta <a> para que la imagen funcione como enlace-->
+            <img class="header__logo" src="img/logo.png" alt="logotipo"> <!--el alt sive para poner un text alternativo en dado caso que no cargue la imagen principal-->
+        </a>
+    </header>
+
+        <nav class="navegacion">
+            <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a> <!--se coloca la clase navegacion__enlace--activo para que en el hover aparezca que parte esta activa en el enlace y se ilumine-->
+            <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        </nav>
+
+        <main class="contenedor">
+            <h1>React Js</h1>
+
+            <div class="camisa">
+                <img class="camisa__imagen" src="img/3.jpg" alt="imagen del producto">
+
+                <div class="camisa__contenido">
+                    <p class="camisa__contenido--texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut ex id velit convallis placerat eget in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut ex id velit convallis placerat eget in nunc.</p>
+                    
+                    <form class="formulario">
+                        <select class="formulario__campo"><!-- Se usa para crear un menu desplegable para elegir varias opciones-->
+                            <option disabled selected>--Seleccionar Talla--</option> <!--Esta etiqueta de opcion tiene la propiedad disable para que no se pueda seleccionar y la propiedad selected para que este seleccionada por defecto-->
+                            <option>Chica</option>
+                            <option>Mediana</option>
+                            <option>Grande</option>
+                        </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                        <input class="formulario__submit" type="submit" value="agregar al carrito">
+                    </form>
+                </div> <!--contenido camisa-->
+            </div> <!--.camisa-->
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__texto">Front-end store - todos los derechos reservados 2022</p>
+        </footer>
+</body>
+</html>
